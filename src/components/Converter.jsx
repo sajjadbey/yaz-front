@@ -14,7 +14,7 @@ export default function OldTurkicConverter() {
     const timeout = setTimeout(async () => {
       try {
         const data = await convertOldTurkic(inputText);
-        setConvertedText(data.result); // assuming API returns { result: "..." }
+        setConvertedText(data); // assuming API returns { result: "..." }
       } catch (err) {
         console.error("Conversion error:", err);
       }
